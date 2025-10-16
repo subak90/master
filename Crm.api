@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------
+SET serverout ON
+exec Installation_SYS.Log_Time_Stamp('Crm','api','Started');
+SET serverout OFF
+--------------------------------------------------------------------------------
+SET VERIFY OFF
+SET FEEDBACK OFF
+--------------------------------------------------------------------------------
+PROMPT crm/CBusOppPayProfAdjust.api
+START "crm/CBusOppPayProfAdjust.api"
+--------------------------------------------------------------------------------
+PROMPT crm/CBusOppPpAmountUtil.api
+START "crm/CBusOppPpAmountUtil.api"
+--------------------------------------------------------------------------------
+SET serverout ON
+exec Installation_SYS.Log_Time_Stamp('Crm','api','Finished');
+SET serverout OFF
+--------------------------------------------------------------------------------
